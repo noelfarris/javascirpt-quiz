@@ -10,6 +10,9 @@ console.log("Hi there. What is your name?");
 
 var name = prompt();
 var answerCorrect = 0;
+var cssCorrect = 0;
+var htmlCorrect = 0;
+var javaCorrect = 0;
 
 console.log("What's up " + name + " let's get started. Here is your first question")
 
@@ -19,6 +22,7 @@ var answer1 = prompt();
 
 if (answer1.toUpperCase() === "BLOCK") {
 	answerCorrect = answerCorrect + 1;
+	htmlCorrect = htmlCorrect + 1;
 	console.log("You got it!");
 } else {
 	console.log("Wrong!...sorry. The correct answer is block.");
@@ -30,6 +34,7 @@ var answer2 = prompt();
 
 if (answer2.toUpperCase() === "<HOME>") {
 	answerCorrect = answerCorrect + 1;
+	chtmlCorrect = htmlCorrect + 1;
 	console.log("You got it!");
 } else {
 	console.log("Wrong!...sorry. The correct answer is <home>");
@@ -41,6 +46,7 @@ var answer3 = prompt();
 
 if (answer3.toUpperCase() === "HYPER TEXT MARKUP LANGUAGE") {
 	answerCorrect = answerCorrect + 1;
+	htmlCorrect = htmlCorrect + 1;
 	console.log("You got it!");
 } else {
 	console.log("Wrong!...sorry. The correct answer is Hyper Text Markup Language");
@@ -52,6 +58,7 @@ var answer4 = prompt();
 
 if (answer4.toUpperCase() === "FORM FIELDS") {
 	answerCorrect = answerCorrect + 1;
+	htmlCorrect = htmlCorrect + 1;
 	console.log("You got it!");
 } else {
 	console.log("Wrong!...sorry. The correct answer is Form fields.");
@@ -63,6 +70,7 @@ var answer5 = prompt();
 
 if (answer5.toUpperCase() === "ADDING LINKS TO YOUR PAGE") {
 	answerCorrect = answerCorrect + 1;
+	htmlCorrect = htmlCorrect + 1;
 	console.log("You got it!");
 } else {
 	console.log("Wrong!...sorry. The correct answer is Adding links to your page.");
@@ -74,6 +82,7 @@ var answer6 = prompt();
 
 if (answer6.toUpperCase() === "MARGIN") {
 	answerCorrect = answerCorrect + 1;
+	cssCorrect = cssCorrect + 1;
 	console.log("You got it!");
 } else {
 	console.log("Wrong!...sorry. The correct answer is Margin.");
@@ -85,6 +94,7 @@ var answer7 = prompt();
 
 if (answer7.toUpperCase() === "COLOR") {
 	answerCorrect = answerCorrect + 1;
+	cssCorrect = cssCorrect + 1;
 	console.log("You got it!");
 } else {
 	console.log("Wrong!...sorry. The correct answer is Color.");
@@ -96,6 +106,7 @@ var answer8 = prompt();
 
 if (answer8.toUpperCase() === "BACKGROUND-COLOR") {
 	answerCorrect = answerCorrect + 1;
+	cssCorrect = cssCorrect + 1;
 	console.log("You got it!");
 } else {
 	console.log("Wrong!...sorry. The correct answer is Background-color.");
@@ -107,6 +118,7 @@ var answer9 = prompt();
 
 if (answer9.toUpperCase() === "DISPLAY:INLINE;") {
 	answerCorrect = answerCorrect + 1;
+	cssCorrect = cssCorrect + 1;
 	console.log("You got it!");
 } else {
 	console.log("Wrong!...sorry. The correct answer is Display:inline;");
@@ -118,6 +130,7 @@ var answer10 = prompt();
 
 if (answer10.toUpperCase() === "FIXED") {
 	answerCorrect = answerCorrect + 1;
+	cssCorrect = cssCorrect + 1;
 	console.log("You got it!");
 } else {
 	console.log("Wrong!...sorry. The correct answer is Fixed.");
@@ -129,6 +142,7 @@ var answer11 = prompt();
 
 if (answer11.toUpperCase() === "27") {
 	answerCorrect = answerCorrect + 1;
+	javaCorrect = javaCorrect + 1;
 	console.log("You got it!");
 } else {
 	console.log("Wrong!...sorry. The correct answer is 27.");
@@ -140,6 +154,7 @@ var answer12 = prompt();
 
 if (answer12.toUpperCase() === "BYTE") {
 	answerCorrect = answerCorrect + 1;
+	javaCorrect = javaCorrect + 1;
 	console.log("You got it!");
 } else {
 	console.log("Wrong!...sorry. The correct answer is Byte");
@@ -151,6 +166,7 @@ var answer13 = prompt();
 
 if (answer13.toUpperCase() === "FALSE") {
 	answerCorrect = answerCorrect + 1;
+	javaCorrect = javaCorrect + 1;
 	console.log("You got it!");
 } else {
 	console.log("Wrong!...sorry. The correct answer is False.");
@@ -162,6 +178,7 @@ var answer14 = prompt();
 
 if (answer14.toUpperCase() === "NODE") {
 	answerCorrect = answerCorrect + 1;
+	javaCorrect = javaCorrect + 1;
 	console.log("You got it!");
 } else {
 	console.log("Wrong!...sorry. The correct answer is Node");
@@ -173,12 +190,31 @@ var answer15 = prompt();
 
 if (answer15.toUpperCase() === "FALSE") {
 	answerCorrect = answerCorrect + 1;
+	javaCorrect = javaCorrect + 1;
 	console.log("You got it!");
 } else {
 	console.log("Wrong!...sorry. The correct answer is False.");
 }
 
 console.log("All finished! You got " + answerCorrect + " out of 15.")
+
+if(htmlCorrect <= 3) {
+	console.log("You got " + htmlCorrect + " html questions correct. You might want to work on this.");
+} else {
+	console.log("You got " + htmlCorrect + " html questions correct. Good work");
+}
+
+if(cssCorrect <= 3) {
+	console.log("You got " + cssCorrect + " CSS questions correct. You might want to work on this.");
+} else {
+	console.log("You got " + cssCorrect + " CSS questions correct. Good work");
+}
+
+if(javaCorrect <= 3) {
+	console.log("You got " + javaCorrect + " JavaScript questions correct. You might want to work on this.");
+} else {
+	console.log("You got " + javaCorrect + " JavaScript questions correct. Good work");
+}
 end = new Date();
 
 console.log('You took ' + ((end.getTime() - start.getTime())/1000) + ' sec');
