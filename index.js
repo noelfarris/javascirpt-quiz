@@ -1,4 +1,10 @@
 var prompt = require('prompt-sync').prompt;
+var end, start;
+
+start = new Date();
+for (var i = 0; i < 1000; i++) {
+  Math.sqrt(i);
+}
 
 console.log("Hi there. What is your name?");
 
@@ -15,7 +21,7 @@ if (answer1.toUpperCase() === "BLOCK") {
 	answerCorrect = answerCorrect + 1;
 	console.log("You got it!");
 } else {
-	console.log("Wrong!...sorry");
+	console.log("Wrong!...sorry. The correct answer is block.");
 } 
 
 console.log("Question 2: Which HTML tag is not valid? <form>, <home>, <section>, <h1>. MAKE SURE TO INCLUDE ALIGATORS.");
@@ -26,7 +32,7 @@ if (answer2.toUpperCase() === "<HOME>") {
 	answerCorrect = answerCorrect + 1;
 	console.log("You got it!");
 } else {
-	console.log("Wrong!...sorry");
+	console.log("Wrong!...sorry. The correct answer is <home>");
 } 
 
 console.log("Question 3: HTML is short for ? Holistic Technical Method Library, Hyper Tax Makes Liars, Hyper Text Markup Language.");
@@ -37,7 +43,7 @@ if (answer3.toUpperCase() === "HYPER TEXT MARKUP LANGUAGE") {
 	answerCorrect = answerCorrect + 1;
 	console.log("You got it!");
 } else {
-	console.log("Wrong!...sorry");
+	console.log("Wrong!...sorry. The correct answer is Hyper Text Markup Language");
 }
 
 console.log("Question 4: What is a field that allow the visitor to enter information called? Form fields, Meta fields, Meta tags.")
@@ -48,7 +54,7 @@ if (answer4.toUpperCase() === "FORM FIELDS") {
 	answerCorrect = answerCorrect + 1;
 	console.log("You got it!");
 } else {
-	console.log("Wrong!...sorry");
+	console.log("Wrong!...sorry. The correct answer is Form fields.");
 }
 
 console.log("Question 5: <a> and </a> are the tags used for? Aligning text, Audio-voiced text, Adding links to your page.");
@@ -59,7 +65,7 @@ if (answer5.toUpperCase() === "ADDING LINKS TO YOUR PAGE") {
 	answerCorrect = answerCorrect + 1;
 	console.log("You got it!");
 } else {
-	console.log("Wrong!...sorry");
+	console.log("Wrong!...sorry. The correct answer is Adding links to your page.");
 }
 
 console.log("Question 6: What property do you use to create spacing between HTML elements? Margin, Border, Spacing");
@@ -70,7 +76,7 @@ if (answer6.toUpperCase() === "MARGIN") {
 	answerCorrect = answerCorrect + 1;
 	console.log("You got it!");
 } else {
-	console.log("Wrong!...sorry");
+	console.log("Wrong!...sorry. The correct answer is Margin.");
 }
 
 console.log("Question 7: What is the property used to set the class's text color? Text:color, Color, Font-color.")
@@ -81,7 +87,7 @@ if (answer7.toUpperCase() === "COLOR") {
 	answerCorrect = answerCorrect + 1;
 	console.log("You got it!");
 } else {
-	console.log("Wrong!...sorry");
+	console.log("Wrong!...sorry. The correct answer is Color.");
 }
 
 console.log("Question 8: What property do you use to set the background color of an image? Color, Color:background, Background-color.")
@@ -92,7 +98,7 @@ if (answer8.toUpperCase() === "BACKGROUND-COLOR") {
 	answerCorrect = answerCorrect + 1;
 	console.log("You got it!");
 } else {
-	console.log("Wrong!...sorry");
+	console.log("Wrong!...sorry. The correct answer is Background-color.");
 }
 
 console.log("Question 9: How would you style an element so that the next element would appear right next to it not underneath it if both elements widths were collectively smaller than the container element? Display:inline; Display:left; Display:block;");
@@ -103,7 +109,7 @@ if (answer9.toUpperCase() === "DISPLAY:INLINE;") {
 	answerCorrect = answerCorrect + 1;
 	console.log("You got it!");
 } else {
-	console.log("Wrong!...sorry");
+	console.log("Wrong!...sorry. The correct answer is Display:inline;");
 }
 
 console.log("Question 10: Which is a valid position property? Fixed, Array, Upper")
@@ -114,7 +120,7 @@ if (answer10.toUpperCase() === "FIXED") {
 	answerCorrect = answerCorrect + 1;
 	console.log("You got it!");
 } else {
-	console.log("Wrong!...sorry");
+	console.log("Wrong!...sorry. The correct answer is Fixed.");
 }
 
 console.log("Question 11: In the following expression what does the variable guess evaluate to? var guess = 27; guess++; Is this 28, 26, 27");
@@ -125,7 +131,7 @@ if (answer11.toUpperCase() === "27") {
 	answerCorrect = answerCorrect + 1;
 	console.log("You got it!");
 } else {
-	console.log("Wrong!...sorry");
+	console.log("Wrong!...sorry. The correct answer is 27.");
 }
 
 console.log("Question 12: Which is not a valid data type? String, Boolean, NaN, Byte")
@@ -136,7 +142,7 @@ if (answer12.toUpperCase() === "BYTE") {
 	answerCorrect = answerCorrect + 1;
 	console.log("You got it!");
 } else {
-	console.log("Wrong!...sorry");
+	console.log("Wrong!...sorry. The correct answer is Byte");
 }
 
 console.log("Question 13: What is the value of the following expression: True || False && True");
@@ -147,7 +153,7 @@ if (answer13.toUpperCase() === "FALSE") {
 	answerCorrect = answerCorrect + 1;
 	console.log("You got it!");
 } else {
-	console.log("Wrong!...sorry");
+	console.log("Wrong!...sorry. The correct answer is False.");
 }
 
 console.log("Question 14: What is the command you run in terminal to run JavaScript?");
@@ -158,7 +164,7 @@ if (answer14.toUpperCase() === "NODE") {
 	answerCorrect = answerCorrect + 1;
 	console.log("You got it!");
 } else {
-	console.log("Wrong!...sorry");
+	console.log("Wrong!...sorry. The correct answer is Node");
 }
 
 console.log("Question 15: What is the boolean value of 0? True or False?");
@@ -169,7 +175,10 @@ if (answer15.toUpperCase() === "FALSE") {
 	answerCorrect = answerCorrect + 1;
 	console.log("You got it!");
 } else {
-	console.log("Wrong!...sorry");
+	console.log("Wrong!...sorry. The correct answer is False.");
 }
 
 console.log("All finished! You got " + answerCorrect + " out of 15.")
+end = new Date();
+
+console.log('You took ' + (end.getTime() - start.getTime()) + ' msec');
