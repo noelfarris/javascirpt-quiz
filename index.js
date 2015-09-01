@@ -2,9 +2,9 @@ var prompt = require('prompt-sync').prompt;
 var end, start;
 
 start = new Date();
-for (var i = 0; i < 1000; i++) {
-  Math.sqrt(i);
-}
+// for (var i = 0; i < 1000; i++) {
+//   Math.sqrt(i);
+// }
 
 console.log("Hi there. What is your name?");
 
@@ -181,4 +181,4 @@ if (answer15.toUpperCase() === "FALSE") {
 console.log("All finished! You got " + answerCorrect + " out of 15.")
 end = new Date();
 
-console.log('You took ' + (end.getTime() - start.getTime()) + ' msec');
+console.log('You took ' + ((end.getTime() - start.getTime())/1000) + ' sec');
